@@ -38,7 +38,7 @@ def predict(image,img_name):
     #degraded = cv2.imread(image_path)
     degraded = image
     file=img_name
-    ref = cv2.imread('source/{}'.format(file))
+    ref = cv2.imread('static/input/{}'.format(file))
     
     # preprocess the image with modcrop
     ref = modcrop(ref, 3)
