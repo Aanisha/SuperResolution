@@ -1,8 +1,9 @@
-import cv2
+
 import numpy as np
 import math
 import os
 import ntpath
+import cv2
 from skimage.measure import compare_ssim as ssim
 from matplotlib import pyplot as plt
 from keras.models import Sequential
@@ -71,18 +72,3 @@ def prepare_images(path, factor):
 
     return img
 
-#prepare_images('Source/', 2)
-
-# test the generated images using the image quality metrics
-
-"""for file in os.listdir('images/'):
-    
-    # open target and reference images
-    target = cv2.imread('images/{}'.format(file))
-    ref = cv2.imread('Source/{}'.format(file))
-    
-    # calculate score
-    scores = compare_images(target, ref)
-
-    # print all three scores with new line characters (\n) 
-    print('{}\nPSNR: {}\nMSE: {}\nSSIM: {}\n'.format(file, scores[0], scores[1], scores[2]))"""
