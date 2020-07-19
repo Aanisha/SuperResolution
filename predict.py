@@ -8,8 +8,8 @@ from skimage.measure import compare_ssim as ssim
 import cv2
 from matplotlib import pyplot as plt
 from prepare_images import psnr,mse,compare_images,prepare_images
-# define necessary image processing functions
 
+# define necessary image processing functions
 def modcrop(img, scale):
     tmpsz = img.shape
     sz = tmpsz[0:2]
@@ -21,8 +21,8 @@ def modcrop(img, scale):
 def shave(image, border):
     img = image[border: -border, border: -border]
     return img
-# define main prediction function
 
+# define main prediction function
 def predict(image,img_name):
     
     # load the srcnn model with weights
@@ -34,9 +34,7 @@ def predict(image,img_name):
     
     srcnn.load_weights('3051crop_weight_200.h5')
     
-    # load the degraded and reference images
-    #, file = os.path.split(image_path)
-    #degraded = cv2.imread(image_path)
+   
     degraded = image
     file=img_name
     ref = cv2.imread('static/input/{}'.format(file))
@@ -46,7 +44,7 @@ def predict(image,img_name):
     degraded = modcrop(degraded, 3)
     
     # convert the image to YCrCb - (srcnn trained on Y channel)
-    #temp = cv2.cvtColor(degraded, cv2.COLOR_BGR2YCrCb)
+    
     temp = cv2.cvtColor(ref, cv2.COLOR_BGR2YCrCb)
     # create image slice and normalize  
     Y = np.zeros((1, temp.shape[0], temp.shape[1], 1), dtype=float)
