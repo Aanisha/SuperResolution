@@ -8,5 +8,26 @@ Note: Only supports .bmp images
 
 ### To run on Local Host:
 
-<ul><li>Clone the repository</li></ul>
-    <li>In the terminal, open the root directory,having the cloned repository </li>
+<ul><li>Clone the repository</li>
+    
+    <li>Open the application.py file, in the folder.</li>
+    <li>Change the 
+        
+        ```UPLOAD_FOLDER = '/app/static/input/'
+           OUTPUT_FOLDER = '/app/static/output/'```
+           
+         to the location of your static/input and static/output folder respectively.
+         
+      </li>
+      <li>Save the file.</li>
+      <li>Open the terminal, and create a virtual environment inside the application.</li>
+      <li>Run the following commands :
+      
+      ```pip3 install -r requirements.txt```
+      
+      To install all the modules and dependencies.</li>
+      <li>```python3 application.py```
+          To run the application.</li>
+   </ul>
+    
+    
