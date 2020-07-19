@@ -29,5 +29,13 @@ Note: Only supports .bmp images
            python3 application.py
    </li>
    </ul>
+   
+   <p>If everything works, the screen will display as follows</p>
+   
+  <img src="https://i.ibb.co/FmcNmNG/Screenshot-2020-07-19-Upload-new-File-1.png" alt="Screenshot-2020-07-19-Upload-new-File-1" border="0">
+  
+  #### Browse and use images, their are few .bmp images added in the source folder of the repository, so those can also be used to test
     
-    
+  Working output:
+  
+  <img src="https://i.ibb.co/tJj7vj0/Screenshot-2020-07-19-Upload-new-File.png" alt="Screenshot-2020-07-19-Upload-new-File" border="0">
