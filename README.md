@@ -64,6 +64,6 @@ Note: Only supports .bmp images
  <img src="https://i.ibb.co/kGJWzrL/Screenshot-2020-07-19-Upload-new-File-2.png" alt="Screenshot-2020-07-19-Upload-new-File-2" border="0">
        
        
-  ##### The model runs on pre-trained weights, taken from the following repo : https://github.com/MarkPrecursor/SRCNN-keras
+  ##### The model is based on the following paper: https://arxiv.org/abs/1501.00092
        
        
